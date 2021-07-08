@@ -27,6 +27,7 @@ namespace Tests
         }
         
         [TestCase(new[] {1, 3, 2, 1}, ExpectedResult = 4)]
+        [TestCase(new[] {20, 3, 2, 1, 5, 20}, ExpectedResult = 27)]
         public int Test(int[] input)
         {
             var rob = new RoomRobbery();
